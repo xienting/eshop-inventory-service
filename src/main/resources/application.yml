@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.0.106:8761/eureka/
+      
+server:
+  port: 8764
+  
+spring:
+  application:
+    name: eshop-inventory-service
+  datasource: 
+    type: com.alibaba.druid.pool.DruidDataSource
+    platform: mysql
+    url: jdbc:mysql://192.168.0.104:3306/eshop
+    username: root
+    password: root
